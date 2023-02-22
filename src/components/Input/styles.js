@@ -22,8 +22,8 @@ export const InputContainer = styled.div`
         align-items: flex-end;
         text-align: right;
         padding: 0 10px;
-
         font-size: 30px;
         font-family: 'Roboto';
+        flex: 1;
     }
 `
