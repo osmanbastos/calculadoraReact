@@ -113,20 +113,6 @@ const App = () => {
     }
   }
 
-  // const display = () => {
-  //   if(currentNumber !== '0' && operation ==='' && firstNumber === '0'){
-  //     setMostre(String(currentNumber))
-  //   }else if(currentNumber !== '0' && operation !=='' && firstNumber === '0'){
-  //     const mostrar = Number(currentNumber) + String(operation)
-  //     setMostre(String(mostrar))
-  //     console.log(mostrar)
-  //   }else if(currentNumber !== '0' && operation !=='' && firstNumber !== '0'){
-  //     const mostrar = Number(firstNumber) + String(operation) + Number(currentNumber)
-  //     setMostre(String(mostrar))
-  //     console.log(mostrar)
-  //   }
-  // }
-
   return (
     <Container>
       <h1>CALCULADORA BÁSICA</h1>
