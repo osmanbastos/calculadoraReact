@@ -21,6 +21,7 @@ export const Container = styled.div`
 
 export const Content = styled.div`
     width: 30%;
+    min-width: 300px;
 `
 export const Row = styled.div`
     display: flex;

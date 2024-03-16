@@ -115,7 +115,7 @@ const App = () => {
 
   return (
     <Container>
-      <h1>CALCULADORA BÁSICA</h1>
+      <h2>CALCULADORA BÁSICA</h2>
       <Content>
         <Input value={mostre}/>
         <Row>
