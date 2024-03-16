@@ -20,7 +20,7 @@ export const Container = styled.div`
 `
 
 export const Content = styled.div`
-    width: 60%;
+    width: 30%;
 `
 export const Row = styled.div`
     display: flex;
