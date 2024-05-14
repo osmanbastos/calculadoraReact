@@ -17,6 +17,8 @@ const App = () => {
       const mostrar = (`${firstNumber} ${operation} ${num}`)
       setMostre(mostrar)
       console.log(mostrar)
+    }else {
+      setMostre(prev => `${prev}${num}`)
     }
   };
 
