@@ -17,11 +17,18 @@ const App = () => {
     setCurrentNumber(prev => `${prev === '0' ? '' : prev}${num}`);
     if (currentNumber === '0' && operation === '' && firstNumber === '0') {
       setMostre(num);
-    } else if (operation !== '' && firstNumber !== '0') {
+    } else if ( currentNumber === '0' && operation !== '' && firstNumber === '0') {
+      const mostrar = (`${num} ${operation}`);
+      setMostre(mostrar);
+      console.log("else if 1")
+    } else if (currentNumber === '0' && operation !== '' && firstNumber !== '0') {
       const mostrar = (`${firstNumber} ${operation} ${num}`);
       setMostre(mostrar);
+    console.log("else if")
     } else {
-      setMostre(prev => `${prev}${num}`);
+      const mostrar = (`${firstNumber} ${operation} ${currentNumber}${num}`);
+      setMostre(mostrar);
+      console.log(firstNumber, operation, currentNumber, num)
     }
   };
 
@@ -37,12 +44,23 @@ const App = () => {
     if (lastResult !== null) {
       setFirstNumber(String(lastResult));
       setLastResult(null);
-    } else if (firstNumber === '0') {
+      setCurrentNumber('0');
+      setOperation(op);
+      setMostre(`${currentNumber} ${op}`);
+      
+    } else if (firstNumber === '0' && currentNumber !== '0' && operation === '') {
       setFirstNumber(String(currentNumber));
+      setCurrentNumber('0');
+      setOperation(op);
+      setMostre(`${currentNumber} ${op}`);
+      console.log(firstNumber, operation, currentNumber);
+    } else {
+      setOperation(op);
+      setMostre(`${currentNumber} ${op}`);
+      setCurrentNumber('0');
+      console.log("terceiro caso", firstNumber, operation, currentNumber);
     }
-    setCurrentNumber('0');
-    setOperation(op);
-    setMostre(`${currentNumber} ${op}`);
+    
   };
 
   const handleEquals = () => {
