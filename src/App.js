@@ -25,6 +25,10 @@ const App = () => {
       const mostrar = (`${firstNumber} ${operation} ${num}`);
       setMostre(mostrar);
     console.log("else if")
+    } else if (currentNumber !== '0' && operation === '' && firstNumber === '0') {
+      const mostrar = (`${num}${operation}${currentNumber}`);
+      setMostre(mostrar);
+      console.log("else if 2")
     } else {
       const mostrar = (`${firstNumber} ${operation} ${currentNumber}${num}`);
       setMostre(mostrar);
