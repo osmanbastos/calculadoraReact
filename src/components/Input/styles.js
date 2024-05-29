@@ -7,6 +7,9 @@ export const InputContainer = styled.div`
     display:flex;
     align-items: center;
     justify-content: flex-end;
+    background-color: #333333;
+    
+    border-radius: 10px;
 
     font-size: 24px;
     font-family: 'Roboto';
@@ -14,10 +17,8 @@ export const InputContainer = styled.div`
     input {
         width: 100%;
         height: 75px;
-        background-color: #000000;
         color: #FFFFFF;
         border: 0;
-        border-radius: 10px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
