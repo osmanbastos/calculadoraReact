@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
     width: 100%;
     height: 100vh;
-    background-color: ${({ isDarkTheme }) => (isDarkTheme ? '#202020' : '#CACACA')};
+    background-color: ${({ isDarkTheme }) => (isDarkTheme ? '#202020' : '#FFFFFF')};
 
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@ export const Card = styled.div`
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    background-color: #555555;
+    background-color: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0 0 10px #000;
 `
