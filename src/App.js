@@ -3,6 +3,7 @@ import Input from './components/Input'
 import Button from './components/Button'
 import { useState } from 'react';
 import Icon from '@mui/material/Icon';
+import { GlobalStyle } from './components/Input/styles';
 
 const App = () => {
   const [currentNumber, setCurrentNumber] = useState('0');
@@ -123,6 +124,7 @@ const App = () => {
 
   return (
     <Container isDarkTheme={isDarkTheme}>
+      <GlobalStyle />
       <ThemeButton onClick={toggleTheme}>
         {isDarkTheme ? "Light Mode" : "Dark Mode"}
       </ThemeButton>
@@ -152,7 +154,7 @@ const App = () => {
             <Button label={"0"} onClick={() => handleAddNumber('0')} isDarkTheme={isDarkTheme}/>
             <Button label={"*"} onClick={handleOperationMultiply} isDarkTheme={isDarkTheme}/>
             <Button label={"/"} onClick={handleOperationDivide} isDarkTheme={isDarkTheme}/>
-            <Button label={"="} onClick={handleEquals} isDarkTheme={isDarkTheme}/>
+            <Button label={"="} onClick={handleEquals} isEqual/>
           </Row>
         </Content>
       </Card>

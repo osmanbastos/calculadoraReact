@@ -6,8 +6,8 @@ export const ButtonContainer = styled.button`
     border: 0;
     border-radius: 50%;
     box-shadow: 0 0 10px ${({ isDarkTheme }) => (isDarkTheme ? 'none' : '#777777')};
-    background-color: ${({ isDarkTheme }) => (isDarkTheme ? '#333333' : '#FFFFFF')};
-    color: ${({ isDarkTheme }) => (isDarkTheme ? '#FFFFFF' : '#000000')};
+    background-color: ${({ isEqual, isDarkTheme }) => (isEqual ? '#008000' : (isDarkTheme ? '#333333' : '#FFFFFF'))};
+    color: ${({ isEqual, isDarkTheme }) => (isEqual ? '#FFFFFF' : (isDarkTheme ? '#FFFFFF' : '#000000'))};
     font-size: 24px;
     font-weight: 700;
     flex: 1;

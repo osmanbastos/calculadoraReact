@@ -26,7 +26,7 @@ export const Card = styled.div`
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    background-color: #FFFFFF;
+    background-color: #555555;
     border-radius: 10px;
     box-shadow: 0 0 10px #000;
 `
